@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\Network\Implementation\AddNodeFacts.cs" />
+    <Compile Remove="Handlers\Network\Implementation\GetAddedNodeInfoFacts.cs" />
+    <Compile Remove="Handlers\Utilities\Implementation\CreateMultiSignatureFacts.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\AddMultiSignatureAddressFacts.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\DumpWalletFacts.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\GetNewAddressFacts.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\GetRawChangeAddressFacts.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\ImportWalletFacts.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\SendManyFacts.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReddCoinCoreNet.Api\ReddCoinCoreNet.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+</Project>

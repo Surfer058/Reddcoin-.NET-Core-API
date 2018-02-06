@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\Network\Implementation\AddNode.cs" />
+    <Compile Remove="Handlers\Network\Implementation\GetAddedNodeInfo.cs" />
+    <Compile Remove="Handlers\Utilities\Implementation\CreateMultiSignature.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\AddMultiSignatureAddress.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\DumpWallet.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\GetNewAddress.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\GetRawChangeAddress.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\ImportWallet.cs" />
+    <Compile Remove="Handlers\Wallet\Implementation\SendMany.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Handlers\Network\Implementation\GetConnectionCount.cs.12404_1.5.partial" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>

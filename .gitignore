@@ -3,3 +3,7 @@
 ################################################################################
 
 /ReddCoinCoreNet.Api/bin/Debug/netcoreapp2.0
+/.vs/ReddCoinCoreNet.Api/v15/Server/sqlite3
+/ReddCoinCoreNet.Api.Tests/bin/Debug/netcoreapp2.0
+/ReddCoinCoreNet.Api/obj
+/ReddCoinCoreNet.Api.Tests/obj

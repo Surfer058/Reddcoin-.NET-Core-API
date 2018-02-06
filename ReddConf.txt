@@ -1,0 +1,6 @@
+rpcconnect=127.0.0.1
+server=1
+rpcuser=developer
+rpcpassword=developerpassword
+rpcport=45333
+rpcallowip=127.0.0.1
